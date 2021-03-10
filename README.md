@@ -1,2 +1,2 @@
 # Tour-Plan
-Project Ivanovs Vladimira
+Project Ivanova Vladimira
