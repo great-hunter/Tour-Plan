@@ -590,6 +590,11 @@ template {
   line-height: 18px;
 }
 
+.rating__counter__little {
+  font-size: 10px;
+  line-height: 13px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
