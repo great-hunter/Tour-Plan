@@ -708,6 +708,7 @@ template {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;
