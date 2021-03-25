@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 document.addEventListener('keydown', function(event) {
-  event.preventDefault();
+  
   if (event.code == 'ArrowRight') {
     document.querySelector('.slider-button--next').click();
   }
