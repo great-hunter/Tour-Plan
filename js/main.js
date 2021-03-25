@@ -8,3 +8,13 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
 });
+
+document.addEventListener('keydown', function(event) {
+  event.preventDefault();
+  if (event.code == 'ArrowRight') {
+    document.querySelector('.slider-button--next').click();
+  }
+  if (event.code == 'ArrowLeft') {
+    document.querySelector('.slider-button--prev').click();
+  }
+});
