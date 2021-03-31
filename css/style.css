@@ -889,7 +889,9 @@ template {
 
 .subscribe__button {
   position: absolute;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   width: 65px;
   right: 0;
   top: 0;
@@ -1113,6 +1115,9 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -1213,9 +1218,6 @@ template {
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
-  .reviews-slider__item::after, .reviews-slider__item::before {
-    display: none;
-  }
   .reviews-slider__button {
     top: 32px;
   }
@@ -1267,10 +1269,10 @@ template {
     padding-left: 20px;
   }
   .reviews-slider__text {
-    height: 280px;
+    height: 300px;
+    text-align: left;
   }
   .reviews-slider__item {
-    text-align: left;
     padding-left: 28px;
     padding-right: 28px;
   }

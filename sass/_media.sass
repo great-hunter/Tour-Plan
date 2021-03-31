@@ -50,6 +50,8 @@
     &-slider
       &__item
         max-width: 580px
+        &::after, &::before
+          display: none
     &__title
       font-size: 30px
       line-height: 38px
@@ -115,8 +117,6 @@
     &-slider
       &__item
         padding: 0 30px 30px
-        &::after, &::before
-          display: none
       &__button
         top: 32px
         &--prev
@@ -153,9 +153,9 @@
     padding-left: 20px
     &-slider
       &__text
-        height: 280px
-      &__item
+        height: 300px
         text-align: left
+      &__item
         padding-left: 28px
         padding-right: 28px
   
