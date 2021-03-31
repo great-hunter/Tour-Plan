@@ -889,7 +889,8 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  overflow: hidden;
+  width: 65px;
   right: 0;
   top: 0;
   height: 100%;
@@ -1031,7 +1032,10 @@ template {
 }
 
 .reviews-slider__text {
+  z-index: 10;
   max-width: 537px;
+  height: 133px;
+  overflow: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1257,6 +1261,18 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .reviews-slider__text {
+    height: 280px;
+  }
+  .reviews-slider__item {
+    text-align: left;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
