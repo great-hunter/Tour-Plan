@@ -1723,6 +1723,7 @@ template {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
+    grid-row-gap: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1744,20 +1745,21 @@ template {
     margin-bottom: 20px;
   }
   .footer__additional {
-    -ms-grid-row: 3;
-    grid-row: 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-  .footer__categories {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__legal {
+  .footer__categories {
     -ms-grid-row: 5;
     grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-bottom: 10px;
+  }
+  .footer__legal {
+    -ms-grid-row: 3;
+    grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
   }
@@ -1766,6 +1768,7 @@ template {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 30px;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
