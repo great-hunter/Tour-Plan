@@ -377,9 +377,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
-            <a href="#" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="#" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
           </div>
           <!-- /.footer__social-link -->
         </div>
@@ -419,16 +419,24 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="icon: phone call">
               </div>
-              Tel (business hours) : 269 1500<br/>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br/>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-
+              <div class="footer__item-links">
+                <a class="footer__item-text" href="tel:269 1500">
+                  Tel (business hours) : <span class="footer__item-tel">269 1500</span>
+                </a><br/>
+                <a class="footer__item-text" href="tel:52-56-61-38">
+                  Tel (hotline) Monday - Saturday: <span class="footer__item-tel">52-56-61-38</span> (08:00 am – 20:00 pm)
+                </a><br/>
+                <a class="footer__item-text" href="tel:52-56-61-38">
+                  Tel (hotline) Sunday: <span class="footer__item-tel">&shy52-56-61-38&shy</span> (08:00 am – 14:00 pm)
+                </a>
+              </div>
+              <!-- footer__item-links -->
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/email.svg" alt="icon: email">
               </div>
-              cherly.lawson@example.com
+              <a class="footer__item-text" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -437,8 +445,8 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="#" class="footer__form">
-            <input type="text" class="imput footer__input" placeholder="Your Full Name*">
-            <input type="text" class="imput footer__input" placeholder="Phone Number*">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*">
+            <input type="text" class="input footer__input" placeholder="Phone Number*">
             <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>

@@ -1256,11 +1256,31 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.footer__item-text {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+  word-wrap: break-word;
+  hyphenate-limit-zone: 15%;
+}
+
+.footer__item-tel {
+  display: inline;
+  white-space: nowrap;
 }
 
 .footer__item--mb-2 {
@@ -1291,6 +1311,10 @@ template {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__message {
@@ -1305,6 +1329,10 @@ template {
   resize: none;
   outline: none;
   margin-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {
@@ -1642,6 +1670,10 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer__message {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .buttom__wrapper {
     min-width: 100%;
   }
@@ -1688,8 +1720,9 @@ template {
     width: 100%;
   }
   .footer-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
   }
   .footer__logo {
     -ms-grid-row: 1;

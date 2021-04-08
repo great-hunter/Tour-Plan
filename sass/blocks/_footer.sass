@@ -55,11 +55,26 @@
   &__item
     display: flex
     align-items: flex-start
+    flex-wrap: wrap
+    justify-content: 
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
+    flex-wrap: nowrap
+    &-text
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      color: $footer-text-color
+      word-wrap: break-word
+      hyphenate-limit-zone: 15%
+    &-tel
+      display: inline
+      white-space: nowrap
     &--mb-2
       margin-bottom: 20px
   &__icon
@@ -80,6 +95,10 @@
     margin-bottom: 15px
     flex-basis: 47%
     outline: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__message
     background-color: #fff
     border-radius: 4px
@@ -91,6 +110,10 @@
     resize: none
     outline: none
     margin-bottom: 23px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__button
     min-width: 160px
     max-width: 200px
