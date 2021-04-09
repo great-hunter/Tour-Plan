@@ -1773,11 +1773,13 @@ template {
   .footer__contact-form {
     -ms-grid-row: 7;
     grid-row: 7;
+    width: 100%;
     margin-bottom: 30px;
   }
   .footer__form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
   .footer__button {
     margin-top: 15px;
