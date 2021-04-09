@@ -150,7 +150,7 @@
       border: none
       background-color: #fff
       cursor: pointer
-      outline: none;
+      outline: none
       &__line
         width: 16px
         height: 1px
@@ -226,10 +226,19 @@
     &-wrapper
       min-width: 100%
 @media ( max-width: 576px )
+  body
+    padding-top: 62px
   .navbar-top
     padding: 22px 8px
   .logo
     width: 99px
+  .navbar
+    &-bottom
+      top: 62px
+  .search
+    &__input
+      width: 245px
+      outline: none
   .slider
     height: 200px
   .hotel

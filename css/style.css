@@ -1738,11 +1738,21 @@ template {
 }
 
 @media (max-width: 576px) {
+  body {
+    padding-top: 62px;
+  }
   .navbar-top {
     padding: 22px 8px;
   }
   .logo {
     width: 99px;
+  }
+  .navbar-bottom {
+    top: 62px;
+  }
+  .search__input {
+    width: 245px;
+    outline: none;
   }
   .slider {
     height: 200px;
