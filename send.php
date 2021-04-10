@@ -28,8 +28,8 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'landing.vladimir@mail.ru'; // Логин на почте
-    $mail->Password   = 'OHA71ZslvRRmPRykXQTo'; // Пароль на почте
+    $mail->Username   = '************'; // Логин на почте
+    $mail->Password   = '********'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('landing.vladimir@mail.ru', 'Владимир Иванов'); // Адрес самой почты и имя отправителя
@@ -83,8 +83,8 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'landing.vladimir@mail.ru'; // Логин на почте
-    $mail->Password   = 'OHA71ZslvRRmPRykXQTo'; // Пароль на почте
+    $mail->Username   = '***********'; // Логин на почте
+    $mail->Password   = '***********'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('landing.vladimir@mail.ru', 'Владимир Иванов'); // Адрес самой почты и имя отправителя
