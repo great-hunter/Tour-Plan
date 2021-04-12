@@ -98,6 +98,9 @@
       &-form
         grid-column: span 5
         grid-row: 4
+  .modal
+    &__dialog
+      padding: 33px 50px
 @media ( max-width:  725px)
   .container
     max-width: 576px
@@ -225,10 +228,17 @@
   .buttom
     &-wrapper
       min-width: 100%
+  .modal
+    &__dialog
+      padding: 33px 30px
 @media ( max-height: 545px )
   .navbar
     &-bottom
       &--visible
+        overflow: auto
+  .modal
+    &__dialog
+        max-height: 100%
         overflow: auto
 @media ( max-width: 576px )
   body
@@ -319,4 +329,7 @@
       margin-bottom: 10px
   .buttom-wrapper
     flex-wrap: wrap
+  .modal
+    &__dialog
+      width: 100%
 
