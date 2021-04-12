@@ -839,7 +839,10 @@ template {
 
 .booking__button {
   width: 100%;
+  padding: 13px;
+  max-width: none;
   min-height: 45px;
+  height: 45px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
