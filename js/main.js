@@ -29,6 +29,11 @@ $(document).ready(function () {
   var closeModalButton = $('.modal__close');
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
+  $(document).keyup(function(evet) {
+	if (evet.key === "Escape" || evet.keyCode === 27) {
+		closeModal(evet);
+	}
+});
 
   function openModal() {
     var modalOverlay = $('.modal__overlay');
