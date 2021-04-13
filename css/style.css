@@ -1494,12 +1494,22 @@ template {
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .modal__info {
@@ -1653,6 +1663,7 @@ template {
     grid-row: 4;
   }
   .modal__dialog {
+    min-width: 380px;
     padding: 33px 50px;
   }
 }
@@ -1851,7 +1862,7 @@ template {
     overflow: auto;
   }
   .modal__dialog {
-    max-height: 100%;
+    max-height: 96vh;
     overflow: auto;
   }
 }
@@ -1988,7 +1999,10 @@ template {
         flex-wrap: wrap;
   }
   .modal__dialog {
-    width: 100%;
+    min-width: 0;
+    max-width: 576px;
+    width: 92%;
+    padding: 33px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

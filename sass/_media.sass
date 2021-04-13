@@ -100,6 +100,7 @@
         grid-row: 4
   .modal
     &__dialog
+      min-width: 380px
       padding: 33px 50px
 @media ( max-width:  725px)
   .container
@@ -238,7 +239,7 @@
         overflow: auto
   .modal
     &__dialog
-        max-height: 100%
+        max-height: 96vh
         overflow: auto
 @media ( max-width: 576px )
   body
@@ -331,5 +332,8 @@
     flex-wrap: wrap
   .modal
     &__dialog
-      width: 100%
+      min-width: 0
+      max-width: 576px
+      width: 92%
+      padding: 33px 15px
 
