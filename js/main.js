@@ -25,6 +25,13 @@ $(document).ready(function () {
     $(".navbar-bottom").toggleClass('navbar-bottom--visible');
   });
 
+  $('.parallax-window').parallax({
+    imageSrc: '../img/newsletter-bg.jpg',
+    speed: 0.5
+  });
+
+
+
   var modalButton = $('[data-togle="modal"]');
   var closeModalButton = $('.modal__close');
   modalButton.on('click', openModal);
