@@ -85,6 +85,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone number required",
+          minlength: "At least 10 characters required",
         },
       },
     });

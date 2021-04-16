@@ -25,6 +25,39 @@ img {
   padding: 0 23px;
   height: 50px;
   outline: none;
+  position: relative;
+}
+
+.input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .message {
@@ -34,10 +67,38 @@ img {
   border: none;
   resize: none;
   outline: none;
-  font-weight: normal;
+}
+
+.message::-webkit-input-placeholder {
   font-style: normal;
-  line-height: 15px;
+  font-weight: normal;
   font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .button {
@@ -1356,6 +1417,7 @@ template {
 
 .footer__input {
   width: 100%;
+  position: relative;
 }
 
 .footer__input-group {
@@ -1363,10 +1425,7 @@ template {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   outline: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  position: relative;
 }
 
 .footer__message {
@@ -1505,47 +1564,10 @@ template {
   margin-top: 15px;
 }
 
-.modal__input::-webkit-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.modal__input:-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.modal__input::-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.modal__input::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
 }
 
 .modal__button {

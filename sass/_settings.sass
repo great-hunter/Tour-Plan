@@ -16,6 +16,13 @@ img
   padding: 0 23px
   height: 50px
   outline: none
+  position: relative
+  &::placeholder
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #BDBDBD
 .message
   background-color: #fff
   border-radius: 4px
@@ -23,10 +30,12 @@ img
   border: none
   resize: none
   outline: none
-  font-weight: normal
-  font-style: normal
-  line-height: 15px
-  font-size: 12px
+  &::placeholder
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #BDBDBD
 .button
   min-width: 160px
   max-width: 200px
@@ -47,3 +56,5 @@ img
 label.invalid
   color: $primary
   z-index: 100
+  
+  
