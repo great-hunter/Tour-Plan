@@ -59,6 +59,11 @@ img {
   cursor: pointer;
 }
 
+label.invalid {
+  color: #EC1F46;
+  z-index: 100;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -922,11 +927,10 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   border: none;
@@ -950,6 +954,8 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1349,6 +1355,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1492,7 +1502,34 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1503,7 +1540,7 @@ template {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 23px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1511,7 +1548,12 @@ template {
   color: #BDBDBD;
 }
 
+.modal__button {
+  margin-top: 15px;
+}
+
 .modal__info {
+  margin-top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1620,9 +1662,9 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1840,7 +1882,7 @@ template {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
