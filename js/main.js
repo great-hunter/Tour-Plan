@@ -81,7 +81,7 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Email address format: name@domain.com",
         },
         phone: {
           required: "Phone number required",

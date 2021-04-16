@@ -122,7 +122,15 @@ img {
 
 label.invalid {
   color: #EC1F46;
+  position: absolute;
+  left: 0;
+  top: 50px;
   z-index: 100;
+  font-size: 14px;
+}
+
+.newsletter__subscribe > label {
+  top: 55px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1421,7 +1429,7 @@ template {
 }
 
 .footer__input-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   outline: none;
@@ -1561,13 +1569,20 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-top: 15px;
+  position: relative;
+}
+
+.modal__input-group {
+  margin-bottom: 20px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  outline: none;
+  position: relative;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
 }
 
 .modal__button {
