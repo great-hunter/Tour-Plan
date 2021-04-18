@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+  
   //Слайдеры
 
   const hotelSlider = new Swiper('.hotel-slider', {
