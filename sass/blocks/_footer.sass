@@ -10,9 +10,10 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 155px
     grid-row: 1 / 3
     align-self: stretch
+    margin-top: 32px
   &__categories
     grid-row: 1 / 4
   &__social
@@ -24,10 +25,15 @@
     &-network
       display: flex
       align-items: start
+      margin-left: 6px
+      margin-top: 7px
       grid-row: 2 / 4
       grid-column: 3 / 5
+  &__legal
+    margin-left: 70px
   &__contact
     &-details
+      margin-top: 16px
       grid-column: span 2
     &-form
       grid-column: span 2
@@ -51,7 +57,7 @@
     &--inline
       margin: 0 43px 0 0
     &--mb-3
-      margin-bottom: 30px
+      margin-bottom: 32px
   &__item
     display: flex
     align-items: flex-start
@@ -86,6 +92,11 @@
   &__link
     text-decoration: none
     color: inherit
+    &--hover
+      &:hover
+        background: linear-gradient(0deg, rgb(10, 34, 61) 22%, rgb(255, 255, 255) 89%)
+        border-radius: 50%
+
   &__input
     width: 100%
     position: relative
