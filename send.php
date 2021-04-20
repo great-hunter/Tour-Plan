@@ -4,17 +4,17 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-if ($_POST['email']) 
+if (($_POST['email'])&&(!$_POST['name'])&&(!$_POST['phone'])&&(!$_POST['message']))
 {
 
   // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новая подписка Best Tour Plan";
+$title = "New subscriber Best Tour Plan";
 $body = "
-<h2>Новая подписка</h2>
-<b>Эмаил: </b> $email
+<h2>New subscriber</h2>
+<b>Email: </b> $email
 ";
 
 // Настройки PHPMailer
@@ -61,16 +61,31 @@ header('Location: newnewsletter.html');
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+if ($_POST['email']) {
+  $email = $_POST['email'];
+}
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+$title = "New request to the Best Tour Plan";
+if($email){
+  $body = "
+  <h2>New request</h2>
+  <b>Name:</b> $name<br>
+  <b>Phone:</b> $phone<br>
+  <b>Email:</b> $email<br><br>
+  <b>Message:</b><br>$message
+  ";
+}else {
+  $body = "
+  <h2>New request</h2>
+  <b>Name:</b> $name<br>
+  <b>Phone:</b> $phone<br><br>
+  <b>Message:</b><br>$message
+  ";
+}
+
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
