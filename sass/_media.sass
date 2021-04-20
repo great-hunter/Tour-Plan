@@ -18,6 +18,11 @@
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
+  a:hover
+    text-decoration: none
+  .button
+    &:hover
+      background: #EC1F46
   .logo
     width: 132px
   .navbar
@@ -35,6 +40,9 @@
   .search
     &__input
       width: 340px
+    &__button
+      &:hover
+        background: #EC1F46
   .hotel
     padding-top: 16px
     &-grid
@@ -47,6 +55,11 @@
       width: 100%
   .booking
     width: 340px
+    &__button
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
   .swiper
     &-slide
       &__image
@@ -56,6 +69,10 @@
   .newsletter
     margin-top: -13px
     padding: 74px 0 77px 0
+  .subscribe
+    &__button
+      &:hover
+        background: #EC1F46
   .reviews
     &-slider
       &__item
@@ -76,11 +93,18 @@
   .card
     width: 340px
     height: 255px
+    &__button
+      &:hover
+        background: #EC1F46
   .footer
     padding-top: 58px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+    &__link
+      &--hover
+        &:hover
+          background: none
     &__input
       &-group
         flex-basis: 48%
@@ -349,6 +373,15 @@
     &__title
       font-size: 18px
       margin-bottom: 36px
+    &__card
+      &--mobile-1
+        order: 1
+      &--mobile-2
+        order: 2
+      &--mobile-3
+        order: 3
+      &--mobile-4
+        order: 4
   .card
     width: 100%
   .footer
@@ -373,12 +406,13 @@
     &__additional
       grid-row: 4
       grid-column: 1
-      margin-top: 1px;
-      margin-left: 9px;
+      margin-top: 1px
+      margin-left: 9px
     &__categories
       grid-row: 5
       grid-column: 1
       margin-bottom: 10px
+      margin-left: 9px
     &__legal
       grid-row: 3
       grid-column: 1
@@ -389,6 +423,7 @@
         grid-row: 6
         grid-column: 1
         margin-top: 0
+        margin-left: 9px
         margin-bottom: 10px
       &-form
         grid-row: 7
@@ -413,6 +448,8 @@
   .buttom-wrapper
     flex-wrap: wrap
   .modal
+    &__message
+      margin-top: 10px
     &__dialog
       min-width: 0
       max-width: 576px
