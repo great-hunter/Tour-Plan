@@ -36,6 +36,7 @@
     &__input
       width: 340px
   .hotel
+    padding-top: 16px
     &-grid
       flex-direction: column
     &__slider
@@ -52,6 +53,9 @@
         width: 100%
   .map
     width: 340px
+  .newsletter
+    margin-top: -13px
+    padding: 74px 0 77px 0
   .reviews
     &-slider
       &__item
@@ -63,6 +67,8 @@
       line-height: 38px
       margin-bottom: 50px
   .activities
+    padding-top: 45px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -71,6 +77,7 @@
     width: 340px
     height: 255px
   .footer
+    padding-top: 58px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -78,6 +85,8 @@
       &-group
         flex-basis: 48%
     &__logo
+      margin-top: 14px
+      width: 97px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
@@ -85,21 +94,34 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-left: -52px
+        margin-top: 24px
     &__categories
+      margin-top: 5px
       grid-row: 2 / 3
       grid-column: span 2
     &__legal
       grid-column: span 2
-      margin-left: 0
+      margin-top: 5px
+      margin-left: 19px
     &__additional
+      margin-top: 5px
+      margin-left: -38px
       grid-column: span 2
+    &__ul
+      margin-left: 8px
+    &__form
+      max-width: 540px
     &__contact
       &-details
+        margin-top: 25px
         grid-column: span 5
         grid-row: 3
       &-form
         grid-column: span 5
         grid-row: 4
+        margin-top: -3px
+        margin-bottom: 50px
   .modal
     &__dialog
       min-width: 380px
@@ -224,6 +246,13 @@
     width: 49%
     height: 255px
   .footer
+    &__social
+      &-network
+        margin-left: 0
+    &__additional
+      margin-left: 0
+    &__legal
+      margin-left: 0
     &__input
       &-group
         flex-basis: 100%
@@ -258,29 +287,68 @@
     &__input
       width: 245px
       outline: none
+  .breadcrumb-list
+    padding-top: 27px
+    padding-bottom: 7px
   .slider
     height: 200px
   .hotel
+    padding-bottom: 56px
+    &-info
+      padding-bottom: 38px
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 200px
+      height: 179px
+      &__button
+        width: 12px
+        height: 12px
+    &-right
+      min-height: 350px
+      height: 400px
+  .map
+    height: 170px
+  .stars
+    margin-right: 23px
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 58px 0 78px 0
+    &-wrapper
+      width: 88%
     &__title
       margin-bottom: 37px
+      font-size: 20px
+    &-title
+      &__strong
+        font-size: 30px
   .subscribe
     width: 100%
   .reviews
+    padding-top: 25px
+    padding-bottom: 10px
     padding-right: 20px
     padding-left: 20px
+    &__title
+      margin-bottom: 42px
     &-slider
+      &__button
+        &--prev
+          left: 40%
+        &--next
+          right: 40%
       &__text
         height: 300px
         text-align: left
       &__item
         padding-left: 28px
         padding-right: 28px
+  .activities
+    padding-top: 34px
+    padding-right: 9px
+    padding-left: 9px
+    padding-bottom: 48px
+    &__title
+      font-size: 18px
+      margin-bottom: 36px
   .card
     width: 100%
   .footer
@@ -296,6 +364,8 @@
         grid-row: 2
         grid-column: 1
         flex-wrap: wrap
+        margin-left: 10px
+        margin-top: 3px
     &__title
       &--inline
         flex-basis: 100%
@@ -303,6 +373,8 @@
     &__additional
       grid-row: 4
       grid-column: 1
+      margin-top: 1px;
+      margin-left: 9px;
     &__categories
       grid-row: 5
       grid-column: 1
@@ -310,18 +382,25 @@
     &__legal
       grid-row: 3
       grid-column: 1
+      margin-top: 0px
+      margin-left: 9px
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
-        margin-bottom: 30px
+        margin-top: 0
+        margin-bottom: 10px
       &-form
         grid-row: 7
-        width: 100%
+        margin: auto
+        width: 95%
         margin-bottom: 30px
     &__form
+      margin-top: -21px
       flex-wrap: wrap
       width: 100%
+    &__message
+      margin-bottom: 10px
     &__button
       margin-top: 15px
       order: 2
